@@ -1,0 +1,241 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBFAFA;
+    margin: 0;
+    font-family: 'Lato',
+        sans-serif;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    word-spacing: 0.08rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* prepare container to be lower layer */
+.image-and-divcont-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+/* put content over image */
+.div-container-one-and-two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.div-item-one {
+    flex: 1;
+}
+
+.div-item-two {
+    flex: 1;
+    align-self: center;
+
+}
+
+.img-deco {
+    display: none;
+}
+
+.portrait {
+    width: 50%;
+    height: auto;
+}
+
+.subtitle-gold {
+    color: #cc8b50;
+}
+
+.div-container-three-to-seven {
+    display: flex;
+}
+
+.div-container-three-and-four {
+    background-color: #1d212e;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-item-three {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-pers-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pers-icons {
+    width: 30px;
+    height: 30px;
+}
+
+.p-pers-info {
+    color: #FBFAFA;
+    margin-left: 5%;
+}
+
+.section-competence-dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.comp-dev {
+    color: #FBFAFA;
+}
+
+.short-line {
+    width: 10%;
+    height: auto;
+    align-self: center;
+}
+
+.long-line-light {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.div-item-four {
+    display: flex;
+    flex-direction: column;
+}
+
+.progr-lang-wrapper {
+    display: flex;
+
+}
+
+.div-container-five-to-seven {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div-item-five {
+    /* put the item 5 at the end of the flex to make the order 6 7 5 on desktop */
+    order: 1;
+}
+
+@media only screen and (max-width: 1075px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .portrait {
+        margin-right: 8.5%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    /* fonts */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .image-and-divcont-wrapper {
+        position: static;
+    }
+
+    .div-container-one-and-two {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        align-items: stretch;
+    }
+
+
+    .deco-img-desktop {
+        display: none;
+    }
+
+    .img-deco {
+        display: block;
+        width: 100%;
+        visibility: visible;
+    }
+
+    .portrait {
+        width: 65%;
+        height: auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .div-container-three-to-seven {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-item-five {
+        /* put the item 5 at its initial place on mobile */
+        order: 0;
+    }
+}
+
+@media only screen and (max-width: 330px) and (max-height: 570px) {
+    .div-container-one-and-two {
+        height: 100vh;
+    }
+}
