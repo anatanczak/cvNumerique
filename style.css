@@ -131,22 +131,30 @@ p {
     display: flex;
     flex-direction: column;
 }
-
-.progr-lang-wrapper {
-    display: flex;
-
+.prog-lang-tools {
+  margin-bottom: 10%;
 }
+
 
 .div-container-five-to-seven {
     display: flex;
     flex-direction: column;
+    background-color: #fbfafa;
 }
 
 
 .div-item-five {
     /* put the item 5 at the end of the flex to make the order 6 7 5 on desktop */
     order: 1;
+    background-color: #bdc2d5
 }
+.languages{
+  margin: 10%;
+}
+
+.section-six-experience-pro{
+}
+
 
 @media only screen and (max-width: 1075px) {
     h1 {
