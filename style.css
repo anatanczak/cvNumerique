@@ -52,7 +52,7 @@ p {
 
 .div-item-one {
     flex: 1;
-    padding-right: 5%;
+
 }
 
 .div-item-two {
@@ -72,6 +72,8 @@ p {
 
 .subtitle-gold {
     color: #cc8b50;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .div-container-three-to-seven {
@@ -163,7 +165,7 @@ p {
 }
 
 .p-experience-pro {
-    font-size: 300;
+    font-weight: 300;
 }
 
 .date-exp {
@@ -233,6 +235,7 @@ p {
     .div-item-one {
         width: 60%;
         margin: 0;
+        padding-right: 5%;
     }
 
     .div-item-two {
@@ -262,6 +265,9 @@ p {
     .div-item-five {
         background-color: #bdc2d5;
     }
+  .deco-low {
+    display: none;
+  }
 
 }
 
@@ -274,7 +280,7 @@ p {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     p {
@@ -347,11 +353,11 @@ p {
 
 @media only screen and (max-width: 460px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     p {
