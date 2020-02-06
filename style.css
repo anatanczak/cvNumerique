@@ -64,6 +64,9 @@ p {
 .img-deco {
     display: none;
 }
+.deco-img-desktop{
+  margin-top: -2px;
+}
 
 .portrait {
     width: 50%;
@@ -104,6 +107,10 @@ p {
 .p-pers-info {
     color: #FBFAFA;
     margin-left: 5%;
+
+}
+.email-info{
+  margin-left: 10%;
 }
 
 .section-competence-dev {
