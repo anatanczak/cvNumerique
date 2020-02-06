@@ -52,6 +52,7 @@ p {
 
 .div-item-one {
     flex: 1;
+    padding-right: 5%;
 }
 
 .div-item-two {
@@ -149,9 +150,7 @@ p {
 }
 
 
-.languages {
-    margin: 10%;
-}
+
 
 .section-six-experience-pro,
 .section-seven-diplomas {
@@ -246,9 +245,22 @@ p {
         margin: 0;
     }
 
+    .languages {
+        display: none;
+    }
+
+    .languages-dark {
+        margin: 10%;
+    }
+
     .div-container-five-to-seven {
         width: 60%;
         margin: 0;
+        justify-content: space-between;
+    }
+
+    .div-item-five {
+        background-color: #bdc2d5;
     }
 
 }
@@ -315,6 +327,14 @@ p {
         /* put the item 5 at its initial place on mobile */
         order: 0;
         background-color: #1d212e;
+    }
+
+    .languages {
+        margin: 10%;
+    }
+
+    .languages-dark {
+        display: none;
     }
 
     .title-lilac {
