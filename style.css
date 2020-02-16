@@ -2,6 +2,12 @@ html {
     box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #FBFAFA;
     margin: 0;
@@ -23,11 +29,7 @@ p {
     font-size: 1rem;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+
 
 
 
@@ -98,7 +100,9 @@ p {
     flex-direction: row;
     align-items: center;
 }
-
+/* .icon-wrapper{
+  width: 30%;
+} */
 .pers-icons {
     width: 30px;
     height: 30px;
@@ -107,11 +111,8 @@ p {
 .p-pers-info {
     color: #FBFAFA;
     margin-left: 5%;
+}
 
-}
-.email-info{
-  margin-left: 10%;
-}
 
 .section-competence-dev {
     display: flex;
